@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Merhaba Hemşehrim!"
+        android:textColor="@color/purple_500"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/hemsehrim_aciklama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/hemsehrim" />
+
+    <TextView
+        android:id="@+id/hemsehrim_aciklama"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="40dp"
+        android:text="Hemşehrim uygulaması nedir? \n\n     Hemşehrim uygulaması sizin mobil dostunuzdur.\n\n     Şehrinizdeki en gözde mekanlar ile ilgili tanıtımlar gerçekleştirirken bir yandan da şehrinizde gerçekleşecek olan önemli aktivitelerin duyurularını size en hızlı şekilde bildirecektir."
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etkinlikler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/gezi_rehberi"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="24dp"
+        android:text="Gezi Rehberi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hemsehrim_aciklama"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/etkinlikler"
+        android:layout_width="130dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="125dp"
+        android:text="Etkinlikler"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/gezi_rehberi" />
+
+    <Button
+        android:id="@+id/iletisim"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="140dp"
+        android:text="İletişim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/etkinlikler" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/iletisim_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="İLETİŞİM"
+        android:textColor="@color/purple_500"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/iletisim_aciklama"
+        android:layout_width="350dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Hakan KUMAŞ \n\n hakankumas54@gmail.com \n\nLinkedIn | Github \n\n @hakankumas"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gezi_rehberi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.902" />
+
+    <Button
+        android:id="@+id/ana_sayfa"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="4dp"
+        android:text="Ana Sayfa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iletisim_aciklama"
+        app:layout_constraintVertical_bias="0.975" />
+
+    <Button
+        android:id="@+id/gezi_rehberi"
+        android:layout_width="130dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="124dp"
+        android:text="Gezi Rehberi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ana_sayfa" />
+
+    <Button
+        android:id="@+id/etkinlikler"
+        android:layout_width="130dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="140dp"
+        android:text="Etkinlikler"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/gezi_rehberi" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="190dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iletisim_id"
+        app:srcCompat="@drawable/hakan" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
